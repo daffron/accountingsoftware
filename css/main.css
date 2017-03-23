@@ -1,3 +1,18 @@
+.uppermargin{
+  padding-top: 25%;
+
+}
 .hide {
   display: none;
 }
+
+ }
+
+ button {
+   min-width: 80px;
+   min-height: 45px;
+   border-radius: 5px;
+   background-color: #878080;
+   font-family: sans-serif;
+   color: white
+ }

@@ -5,16 +5,29 @@ var reckon = 0;
 var quickbooks = 0;
 
 
-document.getElementById('#go').addEventListener('click', questionOne);
-document.getElementById('#macos').addEventListener('click',questionThree);
-document.getElementById('#macos').addEventListener('click',questionThree);
-document.getElementById('#windows').addEventListener('click',questionThree);
-document.getElementById('#linux').addEventListener('click', questionThree);
-document.getElementById('#large').addEventListener('click', questionFour);
+document.getElementById('#go').addEventListener('click', function(){
+questionOne();
+});
+document.getElementById('#macos').addEventListener('click',function(){
+  addXero();
+  questionThree();
+});
+document.getElementById('#windows').addEventListener('click',function(){
+  questionThree();
+});
+document.getElementById('#linux').addEventListener('click', function(){
+  questionThree();
+});
+document.getElementById('#large').addEventListener('click', function(){
+  questionFour();
+
+});
+
 
 
 function addXero(){
-  xero++;
+  xero ++;
+
 };
 function addReckon(){
   reckon++;
@@ -29,6 +42,7 @@ function questionOne() {
   var two = document.getElementById('#os')
   two.classList.remove('hide')
 };
+
 function questionThree() {
   var i = document.getElementById('#os')
   i.classList.add('hide');
