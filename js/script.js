@@ -14,13 +14,14 @@ document.getElementById('#macos').addEventListener('click',function(){
 });
 document.getElementById('#windows').addEventListener('click',function(){
   questionThree();
+  addXero();
 });
 document.getElementById('#linux').addEventListener('click', function(){
   questionThree();
 });
 document.getElementById('#large').addEventListener('click', function(){
   questionFour();
-
+  addXero();
 });
 
 
